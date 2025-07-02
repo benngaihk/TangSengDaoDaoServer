@@ -57,7 +57,7 @@ fileService: "minio" # 文件服务 minio or oss or seaweed
 minio: # minio配置
   url: "http://minio:9000" # minio地址 格式：http://xx.xx.xx.xx:9000
   uploadURL: "http://minio:9000" # minio上传地址 格式：http://xx.xx.xx.xx:9000
-  downloadURL: "http://minio:9000" # minio下载地址 格式：http://xx.xx.xx.xx:9000
+  downloadURL: "http://localhost:9000" # minio下载地址 格式：http://xx.xx.xx.xx:9000
   accessKeyID: "minioadmin" # minio accessKeyID
   secretAccessKey: "minioadmin"  # minio secretAccessKey
 #oss:  # aliyun oss配置
