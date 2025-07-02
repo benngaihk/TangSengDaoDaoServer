@@ -29,3 +29,7 @@
 logs/
 
 wukongimdata/
+
+# Docker data directories
+docker/tsdd/miniodata/
+docker/tsdd/mysqldata/

@@ -19,9 +19,9 @@ wukongIM:
 
 ##################### db ####################
 db:
- mysqlAddr: "root:#MYSQL_ROOT_PASSWORD#@tcp(mysql)/im?charset=utf8mb4&parseTime=true&loc=Local" # mysql连接地址
+ mysqlAddr: "root:123456@tcp(mysql)/tangsengdaodao?charset=utf8mb4&parseTime=true&loc=Local" # mysql连接地址
  redisAddr: "redis:6379" # redis地址
- #sqlDir: "assets/sql" # 数据库脚本路径
+ #sqlDir: "assets/sql" # 数据库脚本路径 
  #migration: true #  是否合并数据库
  #asynctaskRedisAddr: "" # 异步任务的redis地址 不写默认为RedisAddr的地址
 
