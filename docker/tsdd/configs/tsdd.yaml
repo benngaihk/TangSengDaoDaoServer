@@ -26,10 +26,10 @@ db:
  #asynctaskRedisAddr: "" # 异步任务的redis地址 不写默认为RedisAddr的地址
 
 ##################### 外网配置 ####################
-external: 
- ip: "#EXTERNAL_IP#" # 外网ip
- #baseURL: "" # 外网访问地址 例如 http://10.2.3.1:8090
- #webLoginURL: "" # web im的登录地址 例如 https://web.tangsengdaodao.com
+external:
+  ip: "localhost" # 外网ip
+  baseURL: "http://localhost:82" # 外网访问地址
+  webLoginURL: "http://localhost:82" # API访问地址
 
 ##################### 日志配置 ####################
 #logger: 
@@ -55,9 +55,9 @@ smsCode: "123456" # 测试短信验证码， 如果不为空，则短信验证�
 ##################### 文件服务 ####################
 fileService: "minio" # 文件服务 minio or oss or seaweed
 minio: # minio配置
-#  url: "" # minio地址 格式：http://xx.xx.xx.xx:9000 
- accessKeyID: "minio" # minio accessKeyID
- secretAccessKey: "#MINIO_ROOT_PASSWORD#"  # minio secretAccessKey
+  url: "http://localhost:9000" # minio地址 格式：http://xx.xx.xx.xx:9000
+  accessKeyID: "minioadmin" # minio accessKeyID
+  secretAccessKey: "minioadmin"  # minio secretAccessKey
 #oss:  # aliyun oss配置
 #  endpoint: "" # oss endpoint 例如 oss-cn-hangzhou.aliyuncs.com
 #  bucketName: "" # bucketName 例如： tangsengdaodao

@@ -47,7 +47,7 @@ func (sm *ServiceMinio) UploadFile(filePath string, contentType string, copyFile
 	minioConfig := sm.ctx.GetConfig().Minio
 
 	ctx := context.Background()
-	uploadUl, _ := url.Parse(minioConfig.UploadURL)
+	uploadUl, _ := url.Parse(minioConfig.url)
 	endpoint := uploadUl.Host
 	accessKeyID := minioConfig.AccessKeyID
 	secretAccessKey := minioConfig.SecretAccessKey
