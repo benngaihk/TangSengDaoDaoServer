@@ -56,6 +56,8 @@ smsCode: "123456" # 测试短信验证码， 如果不为空，则短信验证�
 fileService: "minio" # 文件服务 minio or oss or seaweed
 minio: # minio配置
   url: "http://minio:9000" # minio地址 格式：http://xx.xx.xx.xx:9000
+  uploadURL: "http://localhost:9000" # minio上传地址 格式：http://xx.xx.xx.xx:9000
+  downloadURL: "http://localhost:9000" # minio下载地址 格式：http://xx.xx.xx.xx:9000
   accessKeyID: "minioadmin" # minio accessKeyID
   secretAccessKey: "minioadmin"  # minio secretAccessKey
 #oss:  # aliyun oss配置
